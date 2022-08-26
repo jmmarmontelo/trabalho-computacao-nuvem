@@ -1,7 +1,7 @@
 const express = require('express');
-const livros = require('./models/livros');
+const livros = require('../models/livros');
 const router = express.Router();
-const Book = require('./models/livros');
+const Book = require('../models/livros');
 
 // POSt Livro
 router.post("/", (req, res) => {
