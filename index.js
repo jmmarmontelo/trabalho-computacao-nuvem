@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
 require('dotenv').config();
@@ -7,7 +8,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
+app.use(cors())
 app.use('/api/livros', livrosRota);
 
 

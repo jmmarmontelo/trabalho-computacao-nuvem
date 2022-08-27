@@ -3,7 +3,7 @@ const livros = require('../models/livros');
 const router = express.Router();
 const Book = require('../models/livros');
 
-// POSt Livro
+// POST Livro
 router.post("/", (req, res) => {
     book = new Book({
         nome: req.body.nomeLivro,
