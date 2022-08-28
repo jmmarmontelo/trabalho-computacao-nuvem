@@ -24,7 +24,7 @@ function criaLinha(livro){
 
 }
 
-async function main(){
+function main(){
     const data = fazGet("https://trabalho-livraria.herokuapp.com/api/livros")
     const livros = JSON.parse(data)
     const tabela = document.getElementById("tabela")
