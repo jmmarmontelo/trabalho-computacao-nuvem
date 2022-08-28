@@ -16,10 +16,10 @@ mongoose.connect(
     process.env.MONGO_URL,
     {useNewUrlParser:true}
 ).catch(error => {  
-    console.log("erro no banco")
+    console.log("Erro ao conectar com o Banco de dados")
 })
 
 
 app.listen(PORT, () => {
-    console.log("Escutando");
+    console.log("Online");
 })

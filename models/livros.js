@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-//const express = require('express');
-
 
 const LivroEsquema = new mongoose.Schema({
     nome:{
