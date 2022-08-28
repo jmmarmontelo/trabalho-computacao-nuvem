@@ -24,7 +24,7 @@ mongoose.connect(
 })
 
 app.get("/", (req,res) =>{
-    res.render('index.ejs')
+    res.render("views/index.ejs")
 })
 
 app.listen(PORT, () => {
